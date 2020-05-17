@@ -1,0 +1,70 @@
+img {
+  display: block;
+}
+
+.background {
+  min-height: 500px;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  /* height: 2000px; */
+  z-index: -1;
+  background-image: url("../img/teste2.png");
+}
+.nav {
+  position: absolute;
+  top: 350px;
+  left: 80%;
+}
+
+.nav-texto {
+  width: 180px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: rgba(20, 196, 200, 0.3);
+  padding: 14px 30px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  visibility: hidden;
+}
+.sobre:hover .nav-texto {
+  visibility: visible;
+}
+
+.centro-texto {
+  padding-top: 10%;
+}
+
+.centro {
+  width: 25vw;
+  margin: 0 auto;
+  height: 70vh;
+  padding-top: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.centro h1 {
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.centro h3 {
+  padding-top: 40px;
+  font-family: "Podkova", serif;
+  font-size: 18px;
+  line-height: 25px;
+}
