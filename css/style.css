@@ -1,56 +1,61 @@
 img {
   display: block;
 }
+body,
+html {
+  height: 100%;
+}
+main {
+  background-image: url("../img/lapis.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .background {
-  min-height: 500px;
-  background-size: cover;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  /* height: 2000px; */
-  z-index: -1;
-  background-image: url("../img/teste2.png");
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .nav {
-  position: absolute;
-  top: 350px;
-  left: 80%;
+  text-align: right;
+  padding: 20px 0;
+}
+.nav li {
+  display: inline-block;
+  padding: 0 20px;
 }
 
-.nav-texto {
-  width: 180px;
-  height: 50px;
-  border-radius: 40px;
-  background-color: rgba(20, 196, 200, 0.3);
-  padding: 14px 30px;
+.nav a {
   font-family: "Orbitron", sans-serif;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #fff;
-  visibility: hidden;
+  color: #bbba93;
+  letter-spacing: 0.2em;
 }
-.sobre:hover .nav-texto {
-  visibility: visible;
+
+.nav a:hover {
+  color: #fff;
 }
 
 .centro-texto {
+  min-width: 300px;
   padding-top: 10%;
 }
 
 .centro {
-  width: 25vw;
+  /* width: 25vw; */
   margin: 0 auto;
-  height: 70vh;
-  padding-top: 150px;
+  height: auto;
+  padding-top: 0px;
   padding-left: 30px;
   padding-right: 30px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .centro h1 {
@@ -60,6 +65,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   font-family: "Orbitron", sans-serif;
+  color: #fff;
 }
 
 .centro h3 {
@@ -67,4 +73,126 @@ img {
   font-family: "Podkova", serif;
   font-size: 18px;
   line-height: 25px;
+  color: #bbba93;
+}
+.centro li {
+  display: inline-block;
+  padding: 40px 20px;
+}
+.centro img {
+  display: block;
+}
+
+.sobre {
+  background-color: #bbba93;
+  width: 100%;
+  height: 500px;
+}
+.projetos {
+  background-color: #bbba93;
+  width: 100%;
+  height: auto;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.projetos li {
+  background-color: black;
+  padding-bottom: 40px;
+}
+.projetos li p {
+  color: #bbba93;
+  font-family: "Podkova", serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+.sobre .subtitulo h2 {
+  padding: 40px 0 40px 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Orbitron", sans-serif;
+}
+.projetos .subtitulo h2 {
+  padding: 40px 0 40px 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Orbitron", sans-serif;
+}
+.forms {
+  padding-bottom: 80px;
+  text-align: center;
+}
+.formulario {
+  float: none;
+  margin: auto;
+}
+.contato.subtitulo h2 {
+  padding: 40px 0 40px 0;
+  color: #bbba93;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Orbitron", sans-serif;
+}
+.formulario label {
+  color: #bbba93;
+  font-family: "Podkova", serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+.formulario textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.formulario input {
+  width: 300px;
+  height: 25px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100px;
+}
+.footer p {
+  color: #fff;
+  padding-top: 40px;
+  font-family: "Podkova", serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #bbba93;
+  text-align: right;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .projetos li a img {
+    width: 314px;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .nav li {
+    display: block;
+    text-align: center;
+  }
+  .centro-texto {
+    padding-bottom: 20px;
+  }
+
+  .centro li {
+    display: inline-block;
+    padding: 20px 10px;
+  }
+
+  .projetos li a img {
+    width: 300px;
+  }
+  .footer p {
+    text-align: center;
+  }
 }

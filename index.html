@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milena Calixto Mocci</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Orbitron:wght@400;600;700&family=Podkova:wght@400;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <section class="background">
+      <nav class="nav container">
+        <ul>
+          <li>
+            <a hidden href="#sobre">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#projetos">projetos</a>
+          </li>
+          <li>
+            <a href="#contato">contato</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="centro-texto container">
+      <div class="centro grid-16">
+        <img src="./img/ELI_6453.svg" alt="Milena-foto">
+        <h1>Olá, sou Milena Mocci</h1>
+        <h3>Sou bacharel em Ciência da Computação, com conhecimentos em HTML5, CSS3 e Javascript.</h3>
+        <ul>
+          <li><a href="https://github.com/miliscm/projetos"><img src="./img/git.png" alt="milena-github"></a> </li>
+          <li><a href="https://www.linkedin.com/in/milena-calixto-mocci-212bba24/"><img src="./img/Linkedin.png" alt="milena-linkedin"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section class="sobre" id="sobre">
+        <div class="container subtitulo">
+          <h2>Sobre</h2>
+
+        </div>
+
+      </section> -->
+    <section class="projetos" id="projetos">
+      <div class="container subtitulo">
+        <h2>Projetos</h2>
+        <ul class="grid-7">
+          <li><a href="https://www.micalimo.com.br/web-clau/index.html"><img src="./img/2020-05-18_11h34_02.jpg" alt="milena-projeto1"></a></li>
+          <li>
+            <p>Claudiney França - Personal Trainer</p>
+          </li>
+        </ul>
+    </section>
+    <section class="container forms" id="contato">
+      <div class="contato subtitulo">
+        <h2>Contato</h2>
+      </div>
+      <form class="formulario grid-6" id="formulario" method="POST" action="enviar.php">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="comentarios">Comentários</label>
+        <textarea name="comentarios" id="comentarios"></textarea>
+        <label><button name="enviar" id="enviar" type="submit">Enviar</button></label>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <p>Copyright - Todos os direitos reservados</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- </div> -->
+
+    <script src="./js/script.js"></script>
+  </main>
+</body>
+
+</html>
