@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Desenvolvedor Front-end HTML5, CSS3 e Javascript">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Milena Mocci - Desenvolvimento de Websites" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="https://www.micalimo.com.br" />
+  <meta property="og:image" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milena Calixto Mocci - Desenvolvimento de Websites São Paulo/SP</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Orbitron:wght@400;600;700&family=Podkova:wght@400;700;800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
+
+</head>
+
+<body>
+  <main>
+    <section class="background">
+      <nav class="nav container">
+        <ul>
+          <li>
+            <a hidden href="#sobre">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#projetos">projetos</a>
+          </li>
+          <li>
+            <a href="#contato">contato</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="centro-texto container">
+      <div class="centro">
+        <img data-anime="600" class="fadeInLeft" src="./img/ELI_6453.svg" alt="Milena-foto">
+        <h1 data-anime="1000" class="fadeInLeft">Olá, sou Milena Mocci</h1>
+        <h3 data-anime="1400" class="fadeInLeft">Sou bacharel em Ciência da Computação, com conhecimentos em HTML5, CSS3 e Javascript.<br> <strong> Futura Desenvolvedora Front-End!</strong></h3>
+        <ul data-anime="1400">
+          <li><a href="https://github.com/miliscm/projetos"><img src="./img/git.png" alt="milena-github"></a> </li>
+          <li><a href="https://www.linkedin.com/in/milena-calixto-mocci-212bba24/"><img src="./img/Linkedin.png" alt="milena-linkedin"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section class="sobre" id="sobre">
+        <div class="container subtitulo">
+          <h2>Sobre</h2>
+
+        </div>
+
+      </section> -->
+    <section class="projetos" id="projetos">
+      <div class="container subtitulo">
+        <h2>Projetos</h2>
+        <ul data-anime="1600" class="grid-7">
+          <li><a href="https://www.micalimo.com.br/web-clau/index.html"><img src="./img/2020-05-18_11h34_02.jpg" alt="milena-projeto1"></a>
+            <div class="background-texto">
+              <p class="texto">Claudiney França - Personal Trainer.<br>
+                Meu primeiro projeto.</p>
+            </div>
+          </li>
+        </ul>
+    </section>
+    <section class="forms" id="contato">
+      <div class="contato subtitulo">
+        <h2>Contato</h2>
+      </div>
+      <form data-anime="2100" class="formphp container formulario" id="formulario" method="POST" action="./enviar.php">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label class="nao-aparece">Se você não é um robô, deixe em branco</label>
+        <input type="text" class="nao-aparece" name="leaveblank">
+        <label class="nao-aparece">Se você não é um robô, não mude este campo</label>
+        <input type="text" class="nao-aparece" name="dontchange" value="http://">
+        <label for="comentarios">Comentários</label>
+        <textarea name="comentarios" id="comentarios" required></textarea>
+        <button class="btn" name="enviar" id="enviar" type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <p>Copyright - Todos os direitos reservados</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- </div> -->
+    <script src="./js/simple-form.js"></script>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
+  </main>
+</body>
+
+</html>
